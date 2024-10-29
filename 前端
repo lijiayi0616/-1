@@ -1,74 +1,74 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
+--  phpMyAdmin SQL转储   
+-- 版本 5.0。2
+-- https://www.phpmyadmin.net/    
 --
 -- 主机： localhost
--- 生成日期： 2021-07-09 12:02:40
--- 服务器版本： 10.4.14-MariaDB
--- PHP 版本： 7.4.9
+-- 生成日期：2024 - 10 - 20                 
+-- 服务器版本： 10.4。14  -玛丽亚数据库  
+--  PHP版本：7.4。9      
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+设置 SQL_MODE  =  “NO_AUTO_VALUE_ON_ZERO”；"NO_AUTO_VALUE_ON_ZERO"  ;            
+START开始交易；交易 ；
+SET设置时区=“+ 00 : 00 ”；"+00:00" ;                    
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */ /*!40101 ;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */ /*!40101 ;
+/*!40101 @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */ /*!40101 ;
+/*!40101 名称 utf8mb4 */ /*!40101 ;
 
 --
 -- 数据库： `ego`
 --
 
--- --------------------------------------------------------
+--------------------------------------------------  --------
 
 --
 -- 表的结构 `category`
 --
 
-CREATE TABLE `category` (
-  `id` int(11) DEFAULT NULL,
-  `name` text DEFAULT NULL,
-  `cid` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+    `id`  int ( 11 )NULL( 11 ) )默认为NULL，( )默认为NULL ，int ( )默认为NULL，( )默认为NULL，                                                 
+    `name` 文本默认为 NULL 文本默认为 NULL
+    `cid` int ( 11 )NULL ( 11 ) DEFAULT )默认为NULL ( ) DEFAULT NULL int ( ( DEFAULT ) 默认为 NULL ( ) DEFAULT NULL                                                                                                     
+
 
 --
--- 转存表中的数据 `category`
+-- 转存表中的数据`类别`
 --
 
-INSERT INTO `category` (`id`, `name`, `cid`) VALUES
-(1, '家用电器', 1001),
-(1, '手机/运营商/数码', 1002),
-(1, '电脑/办公', 1003),
-(1, '家具/家居', 1004),
-(1001, '电视', 10001),
-(1001, '空调', 10002),
-(1001, '洗衣机', 10003),
-(1001, '冰箱', 10004),
-(1002, '手机通讯', 10001),
-(1002, '运营商', 10002),
-(1002, '摄影', 10003),
-(1002, '摄像', 10004),
-(1003, '电脑整机', 10001),
-(1003, '电脑配件', 10002),
-(1003, '外设产品', 10003),
-(1003, '游戏设备', 10004),
-(1004, '厨具', 10001),
-(1004, '家纺', 10002),
-(1004, '灯具', 10003),
-(1004, '家具', 10004),
-(10001, '超薄点视', 100001),
-(10001, '全面屏点视', 100002);
+插入“类别”（“id”、“名称”、“cid”）值
+(      1 , '家用电器'  , 1001   ) ,
+(   1 , '手机/运营商/数码'  , 1002   ) ,
+(   1 , '电脑/办公'  , 1003   ) ,
+(   1 , '家具/家居'  , 1004   ) ,
+(   1001 , '电视 ' ， 10001   ) ,
+(   1001 , '空调'  , 10002  ) ,
+( 第1001章'洗衣机'  , 10003  ) ,
+(  1001 , '冰箱' ， 10004  ) ,
+(  1002 , '手机通讯 '  , 10001  ) ,
+(     ) ,  1002 , '运营商'  , 10002   ,
+(     ) ,  1002 , '摄影' , 10003   ,
+(     ) ,  1002 , '网络' , 10004   ,
+(     ) ,  1003 , '电脑整机' , 10001   ,
+(   ) , 1003 , '电脑配件' , 10002   ,
+(     ) ,  1003 , '外设产品' , 10003   ,
+(     ) ,  1003 , '游戏设备' , 10004   ,
+(     ) ,  1004 , '厨具' , 10001   ,
+(     ) ,  1004 , '家纺' , 10002   ,
+(     ) ,  1004 , '灯具' , 10003   ,
+(     ) ,  1004 , '家具' , 10004   ,
+( )  , 10001 , '超薄点视' , 100001 ,                  
+( ) ; 10001 , '全面屏点视' , 100002 ;                 
 
--- --------------------------------------------------------
+-------------------------------------------------- --------  
 
 --
 -- 表的结构 `content`
 --
 
-CREATE TABLE `content` (
-  `id` int(11) DEFAULT NULL,
+创建 表“内容”  （
+  `id` int  (默认为NULL , 11 ) 默认为 NULL ,   
   `name` text NOT NULL,
   `pid` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
