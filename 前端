@@ -1,14 +1,23 @@
---  phpMyAdmin SQL转储   
--- 版本 5.0。2
--- https://www.phpmyadmin.net/    
---
+|-学号_832201210
+ 
+​ |- src
+​
+​ |- concacts.html/.xml/.wxml
+​
+​ |- ......其他文件
+ 
+|- .mdt
+ 
+|- python.md
+-- phpMyAdmin SQL转储   
+
 -- 主机： localhost
 -- 生成日期：2024 - 10 - 20                 
--- 服务器版本： 10.4。14  -玛丽亚数据库  
---  PHP版本：7.4。9      
+-- 服务器版本： 10.4。14 -玛丽亚数据库  
+-- PHP版本：7.4。9      
 
-设置 SQL_MODE  =  “NO_AUTO_VALUE_ON_ZERO”；"NO_AUTO_VALUE_ON_ZERO"  ;            
-START开始交易；交易 ；
+设置 SQL_MODE = “NO_AUTO_VALUE_ON_ZERO”；"NO_AUTO_VALUE_ON_ZERO" ;            
+START开始交易；交易；
 SET设置时区=“+ 00 : 00 ”；"+00:00" ;                    
 
 
@@ -21,16 +30,16 @@ SET设置时区=“+ 00 : 00 ”；"+00:00" ;
 -- 数据库： `ego`
 --
 
---------------------------------------------------  --------
+-------------------------------------------------- --------
 
 --
 -- 表的结构 `category`
 --
 
 
-    `id`  int ( 11 )NULL( 11 ) )默认为NULL，( )默认为NULL ，int ( )默认为NULL，( )默认为NULL，                                                 
-    `name` 文本默认为 NULL 文本默认为 NULL
-    `cid` int ( 11 )NULL ( 11 ) DEFAULT )默认为NULL ( ) DEFAULT NULL int ( ( DEFAULT ) 默认为 NULL ( ) DEFAULT NULL                                                                                                     
+    `id` int ( 11 )NULL( 11 ) )默认为NULL，( )默认为NULL ，int ( )默认为NULL，( )默认为NULL，                                                 
+    `name` 文本默认为 NULL
+    `cid` int ( 11 )NULL ( 11 ) DEFAULT )默认为NULL ( ) DEFAULT NULL int ( ( DEFAULT ) 默认为NULL ( ) DEFAULT NULL                                                                                                     
 
 
 --
